@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/* 第一区域 */
+.first-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background-color: #B2C5CC;
+}
+.first-ipadNav{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}  
+.ipadNav-item{
+    color: #757575;
+    margin-left: 50px;
+}
+.nav-active{
+    color: #afafaf;
+}
+.first-img{  
+    margin-top: 70px;
+}
+.first-text{
+    color: #fff;
+    margin-top: 30px;
+}
+.first-btn{
+    margin-top: 70px;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 20px;
+}   
+
+.first-iphoneHeader{
+    display: none;     
+    width: 100%;
+    height: 50px;
+    background-color: #7ea6ba;            
+}
+.iphoneHeader-title{
+    color: #fff;        
+}
+.iphoneHeader-btn{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #B2C5CC;
+    position: absolute;
+    right: 20px;
+}
+.iphoneHeader-btn-active{
+    box-shadow: 0 0 5px #fff;
+}
+.first-iphoneNav{
+    height: 0;
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #7ea6ba;
+    text-align: center;
+    transition: height .5s;
+}
+.first-iphoneNav-show{
+    height: 156px;
+}
+.iphoneNav-item{
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    color: #fff;
+    border-top: 1px solid #B2C5CC;
+}
+
+ /* 第二区域 */
+.second-container{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    
+}
+.second-item{
+    color: #bababa;
+}
+.second-active{
+    color: #545454;
+}
+
+/* 第三区域 */
+.third-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.third-title,
+.third-text{
+    width: 70%;
+}
+.third-title{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third-text{
+    margin-top: 20px;
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+/* 第四区域 */
+.fourth-container{
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 70px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fourth-title{
+    margin-left: 5%;
+}
+.fourth-link{
+    margin-right: 5%;
+}
+.fourth-link a{
+    color: #7ea6ba;
+}
+
+/* 第五区域 */
+.fifth-container{
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: cover;
+}
+.fifth-title{
+    margin-top: 70px;
+    padding: 15px 0;
+}
+.fifth-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.fifth-img img{
+    width: 31%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* 第六区域 */
+.sixth-container{
+    width: 100%;
+    height: 64px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+
+}
+
+
+@media (max-width:576px){
+.first-ipadNav{
+        display: none;
+    }
+.first-iphoneHeader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.second-container{
+        font-size: 14px;
+    }
+.third-title,
+.third-text{
+        width: 90%;
+    }
+.third-text{
+    font-size: 14px;
+}
+.fourth-container{
+        flex-direction: column;
+    }
+.fourth-title{
+        margin-left: 0;
+    }
+.fourth-link{
+        margin-right: 0;
+        white-space: nowrap;
+    }
+.fifth-img img{
+        width: 47%;
+        height: 150px;
+    }
+
+}
